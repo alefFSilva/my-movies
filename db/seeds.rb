@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+ movies = [
+        {title: "Alladin", relase_date: "25-Nov-1992"},
+        {title: "When Harry Met Sally", relase_date: "21-Jul-1998"},
+        {title: "The help", relase_date: "05-Dez-2011"},
+        {title: "Raiders of the LOst Ark", relase_date: "12-Jun-1981"}
+          ]
+
+  movies.each do |movie|
+    Movie.create!(movie)
+  end
