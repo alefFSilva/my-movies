@@ -15,3 +15,23 @@
   movies.each do |movie|
     Movie.create!(movie)
   end
+
+
+actors = [
+    {name:"Angelina Jolie"},
+    {name:"Will Smith" },
+    {name:"Margot Robbie"},
+]
+
+actors.each do |actor|
+  Actors.create!(actor)
+end
+
+directors = [
+  {name:"Quantin Tarantino"},
+  {name:"Mel Gibson"}
+]
+
+directors.each do |actor|
+  Actor.create!(actor)
+end
