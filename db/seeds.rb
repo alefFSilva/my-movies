@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
  movies = [
-        {title: "Alladin", relase_date: "25-Nov-1992"},
-        {title: "When Harry Met Sally", relase_date: "21-Jul-1998"},
-        {title: "The help", relase_date: "05-Dez-2011"},
-        {title: "Raiders of the LOst Ark", relase_date: "12-Jun-1981"}
+        {title: "Alladin", release_date: "25-Nov-1992"},
+        {title: "When Harry Met Sally", release_date: "21-Jul-1998"},
+        {title: "The help", release_date: "05-Dez-2011"},
+        {title: "Raiders of the LOst Ark", release_date: "12-Jun-1981"}
           ]
 
   movies.each do |movie|
@@ -24,14 +24,14 @@ actors = [
 ]
 
 actors.each do |actor|
-  Actors.create!(actor)
+  Actor.create!(actor)
 end
 
 directors = [
-  {name:"Quantin Tarantino"},
-  {name:"Mel Gibson"}
+  {name:"Quantin Tarantino", gender:"male"},
+  {name:"Mel Gibson",        gender:"male"}
 ]
 
-directors.each do |actor|
-  Actor.create!(actor)
+directors.each do |director|
+  Director.create!(director)
 end
